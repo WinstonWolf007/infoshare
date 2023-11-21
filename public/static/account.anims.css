@@ -1,0 +1,60 @@
+/* cool transition button */
+@keyframes overSize {
+    100% {
+        width: 130px;
+    }
+}
+
+@keyframes ball {
+    0% {
+        width: 130px;
+    }
+    100% {
+        width: 80px;
+    }
+}
+
+.overSIzeToLeft {
+    animation: overSize 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    transition: ball 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.ball {
+    animation: ball 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    transition: overSize 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+/* Flip box menue */
+.flip-card-anim .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card {
+    perspective: 1000px; /* Adjust the perspective value for the 3D effect */
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+  }
+
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}

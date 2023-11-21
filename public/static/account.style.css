@@ -1,0 +1,186 @@
+/* Réinitialisation des styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fd;
+}
+
+/* Style du titre principal */
+#title {
+    user-select: none;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.flip-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style du conteneur principal */
+#box {
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 50px -13px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+#box-error {
+    display: none;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 66, 66);
+}
+
+/* Style du titre du conteneur */
+#box-title {
+    user-select: none;
+    padding: 40px 0 30px 0;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: #847d7b;
+}
+
+/* Style des étiquettes de champ de saisie */
+#box-inputs div span {
+    background-color: #a5c150;
+    border-radius: 4px 0px 0px 4px;
+    transform: translateY(5px);
+    padding: 15px;
+    color: #fff;
+    height: 28px;
+    user-select: none;
+}
+
+#box-inputs div span:hover {
+    background-color: #afce50;
+    cursor: pointer;
+}
+
+/* Style des champs de saisie */
+#box-inputs div input {
+    outline: none;
+    border: 1px rgb(216, 216, 216) solid;
+    border-left: none;
+    transform: translateX(-5px);
+    height: 53px;
+    width: 240px;
+    margin-bottom: 10px;
+    border-radius: 0px 4px 4px 0px;
+    padding-left: 10px;
+}
+
+/* Styles communs pour le titre et les champs de saisie */
+#box-title, #box-inputs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style des liens dans le conteneur */
+#box-links {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style du lien pour sauvegarder le mot de passe */
+.box-link-savePassword {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a5c150;
+}
+
+.box-link-savePassword label {
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+/* Style du bouton de connexion */
+.box-link-loginButton input[type='submit'] {
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    background-color: #a5c150;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 13px;
+    width: 80px;
+}
+
+.box-link-loginButton input[type='submit']:hover {
+    background-color: #afce50;
+}
+
+/* Style de la case à cocher */
+input[type="checkbox"] {
+    outline: none;
+    border: none;
+    accent-color: #afce50;
+    cursor: pointer;
+}
+
+/* Style du pied de page du conteneur */
+#box-footers {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style de la section d'inscription du pied de page */
+.box-footer-signUp {
+    font-size: 13px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+}
+
+.box-footer-signUp a {
+    transform: translate(-50px, 13px);
+    color: #a5c150;
+    text-decoration: none;
+}
+
+.box-footer-signUp p {
+    user-select: none;
+    color: #847d7b;
+}
+
+/* Style de la section de mot de passe oublié du pied de page */
+.box-footer-forgotPassword {
+    width: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.box-footer-forgotPassword a {
+    color: #a5c150;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Ligne de séparation en bas de la page */
+#bottom, #bottom2 {
+    width: 100%;
+    height: 1px;
+    margin-top: 100px;
+}
+
+#bottom2 {
+    margin-top: 57px;
+}
